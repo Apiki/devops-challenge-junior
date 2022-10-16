@@ -1,14 +1,16 @@
+// Adicionado tag php
+<?php
 
 /**
  * @package Devops_challenge_Junior
- * @version 1.0
+ * @version 1.1
  */
 /*
 Plugin Name: Devops challenge Júnior
 Plugin URI: https://apiki.com/
 Description: Sabe de nada, inocente! Ordinária!!
 Author: Apiki WordPress
-Version: 1.0
+Version: 1.1
 */
 
 function apiki_segura_o_tchan() {
@@ -31,7 +33,8 @@ Depois de nove meses você vê o resultado
 Esse é o Gera Samba arrebentando no pedaço
 Joga ela no meio, mete em cima, mete embaixo";
 
-	$lyrics = explode( "\n", $lyrics )
+	// Adicionado ;
+	$lyrics = explode( "\n", $lyrics );
 
 	return wptexturize( $lyrics[ mt_rand( 0, count( $lyrics ) - 1 ) ] );
 }
@@ -52,7 +55,8 @@ function devops_challenge() {
 	);
 }
 
-add_action( '', 'devops_challenge' );
+// Adicionado a função admin_notices
+add_action('admin_notices', 'devops_challenge' );
 
 function devop_css() {
 	echo "
@@ -64,12 +68,15 @@ function devop_css() {
 		font-size: 12px;
 		line-height: 1.6666;
 	}
+	
 	.rtl #devop {
 		float: left;
 	}
+	
 	.block-editor-page #devop {
 		display: none;
 	}
+	
 	@media screen and (max-width: 782px) {
 		#devop,
 		.rtl #devop {
@@ -83,3 +90,5 @@ function devop_css() {
 }
 
 add_action( 'admin_head', 'devop_css' );
+
+?>
