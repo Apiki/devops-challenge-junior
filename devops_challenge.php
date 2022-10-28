@@ -1,14 +1,14 @@
 <?php //faltou a flag de interpretação
 /**
  * @package Devops_challenge_Junior
- * @version 1.0
+ * @version 1.1
  */
 /*
 Plugin Name: Devops challenge Júnior
 Plugin URI: https://apiki.com/
 Description: Sabe de nada, inocente! Ordinária!!
 Author: Apiki WordPress
-Version: 1.0
+Version: 1.1
 */
 
 function apiki_segura_o_tchan() {
