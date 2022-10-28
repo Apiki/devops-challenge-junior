@@ -59,5 +59,5 @@ Usuario: contribuidor
 Senha: apiki_1541tre
 - wordpress
 http://44.206.234.209/
-Uwuario: iago
+Usuario: iago
 Senha: eKo9(V@@XK*gHc4w%!
