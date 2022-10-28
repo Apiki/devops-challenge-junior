@@ -1,33 +1,56 @@
-# Devops challenge júnior
 
-Objetivo é demonstrar inteligência, capacidade e organização para realizar tarefas básicas para o cargo.
+## Esta é minha entrega para o desafio devops da Apiki
 
-### Critérios de avaliação:
+### Primeira parte
 
-✔ Organização <br>
-✔ Esforço <br>
-✔ Entrega em si dos 2 Challenges <br>
-✔ Documentação da entrega <br>
+Realizei a criação da instância, segui o passo a passo do link fornecido no PR inicial, deu tudo certo como mostra na imagem: 
+
+![Web 1](https://github.com/DanielHott/imagens/blob/master/machine.png)
+
+### Segunda parte
+
+Fiz os ajustes necessários para o código do plugin funcionar, que consistia em:
+
+#### - Ajustar a versão correta do pacote para 1.1.
+![Web 1](https://github.com/DanielHott/imagens/blob/master/first.png)
+
+#### - Ao final na linha 34 faltava o ";".
+
+![Web 1](https://github.com/DanielHott/imagens/blob/master/second.png)
+
+#### - Faltava especificar o admin_head no add_action para a funcão funcionar(havia uma pequena dica no código, obrigado). 
+
+![Web 1](https://github.com/DanielHott/imagens/blob/master/adminnotices.png)
+
+### Em seguida realizei o upload do plugin para a instância.
 
 
-### → Challenge Ops:
-> Iniciar e configurar uma instância do WordPress no Amazon Lightsail <br>
-https://lightsail.aws.amazon.com/ls/docs/pt_br/articles/amazon-lightsail-tutorial-launching-and-configuring-wordpress <br>
-Fazer da etapa 1 até a 5 somente.
 
-### → Challenge Dev:
-> Resolva os 3 erros no plugin<br>
-[Plugin DevOps Challenge](devops_challenge.php)
+![Web 1](https://github.com/DanielHott/imagens/blob/master/plugin.png)
+
+![Web 1](https://github.com/DanielHott/imagens/blob/master/plugin2.png)
+
+## Dados de acesso:
+
+#### Url
 
 
+http://44.208.179.22/wp-login.php
 
-### Entrega
-1. Efetue o fork deste repositório e crie um branch com o seu nome e sobrenome. (exemplo: fulano-dasilva)
-2. Após finalizar o desafio, crie um Pull Request.
-3. Aguarde algum contribuidor realizar o review.
-4. Dados de acesso do WordPress e Lightsail com tudo configurado e funcionando
-5. Prints e url "http://PublicIpAddress/wp-login.php"
-6. Documentação (Opcional)
-7. Arquitetura (Opcional)
-8. Plugin informado arrumado e versionado
-9. Suba o plugin para a sua instalação WordPress Lightsail e ative o mesmo.
+
+#### Usuário
+
+```bash
+user
+```
+
+#### Senha
+
+```bash
+ve919WrwrX1U
+```
+
+![Web 1](https://github.com/DanielHott/imagens/blob/master/wordpressassinature.png)
+
+
+### Obrigado pela oportunidade de fazer o desafio!!
