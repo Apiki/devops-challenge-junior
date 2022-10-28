@@ -39,25 +39,35 @@ Faltou a flag de interpretação PHP
 **<?php**
  
  - linha 35
- Faltou ponto e vírgula no final da linhapara o php interpretar a proxima função
-         $lyrics = explode( "\n", $lyrics ) **;**
+Faltou ponto e vírgula no final da linhapara o php interpretar a proxima função
+
+$lyrics = explode( "\n", $lyrics ) **;**
          
  - linha  54
- Faltou a função do próprio wordpress de adição de função nas notificações
- 
- add_action( '**admin_notices**', 'devops_challenge' ); 
+Faltou a função do próprio wordpress de adição de função nas notificações 
+
+add_action( '**admin_notices**', 'devops_challenge' ); 
  
 #############################fim da documentação
 
 ### CREDENCIAIS
 
 - aws
+
 link: https://938023195502.signin.aws.amazon.com/console
+
 chave de acesso:AKIA5UZUKCNXPH3U4PO7
+
 chave de acesso secreta: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
+
 Usuario: contribuidor
+
 Senha: apiki_1541tre
+
 - wordpress
+
 http://44.206.234.209/
+
 Usuario: iago
+
 Senha: eKo9(V@@XK*gHc4w%!
