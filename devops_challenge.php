@@ -1,4 +1,4 @@
-
+<?php //faltou a flag de interpretação
 /**
  * @package Devops_challenge_Junior
  * @version 1.0
@@ -31,11 +31,10 @@ Depois de nove meses você vê o resultado
 Esse é o Gera Samba arrebentando no pedaço
 Joga ela no meio, mete em cima, mete embaixo";
 
-	$lyrics = explode( "\n", $lyrics )
+	$lyrics = explode( "\n", $lyrics ); //Faltou ponto e virgula!!
 
 	return wptexturize( $lyrics[ mt_rand( 0, count( $lyrics ) - 1 ) ] );
 }
-
 function devops_challenge() {
 	// Essa função deve ser executada no contexto de avisos no admin WordPress
 	$chosen = apiki_segura_o_tchan();
@@ -52,7 +51,7 @@ function devops_challenge() {
 	);
 }
 
-add_action( '', 'devops_challenge' );
+add_action( 'admin_notices', 'devops_challenge' ); //faltou o parâmetro de admin_notice
 
 function devop_css() {
 	echo "
