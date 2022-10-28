@@ -37,28 +37,16 @@ versão_afetada: 1.0
 Faltou a flag de interpretação PHP
 
 **<?php**
-`/** 
-  * @package Devops_challenge_Junior 
-  * @version 1.0 
-  */ 
- /* 
  
  - linha 35
  Faltou ponto e vírgula no final da linhapara o php interpretar a proxima função
          $lyrics = explode( "\n", $lyrics ) **;**
-  
-         return wptexturize( $lyrics[ mt_rand( 0, count( $lyrics ) - 1 ) ] ); 
- }
- 
-  
+         
  - linha  54
  Faltou a função do próprio wordpress de adição de função nas notificações
  
  add_action( '**admin_notices**', 'devops_challenge' ); 
-  
- function devop_css() { 
-         echo " 
-
+ 
 #############################fim da documentação
 
 ### CREDENCIAIS
@@ -70,5 +58,6 @@ chave de acesso secreta:FFOKyQd0mVGSCd2e5JtyKrgJLIs9B5U+wdOhIZFN
 Usuario: contribuidor
 Senha: apiki_1541tre
 - wordpress
+http://44.206.234.209/
 Uwuario: iago
 Senha: eKo9(V@@XK*gHc4w%!
