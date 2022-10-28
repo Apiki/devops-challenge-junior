@@ -1,33 +1,76 @@
-# Devops challenge júnior
-
-Objetivo é demonstrar inteligência, capacidade e organização para realizar tarefas básicas para o cargo.
-
-### Critérios de avaliação:
-
-✔ Organização <br>
-✔ Esforço <br>
-✔ Entrega em si dos 2 Challenges <br>
-✔ Documentação da entrega <br>
+---
+title: apiki - Devops challenge júnior
 
 
-### → Challenge Ops:
-> Iniciar e configurar uma instância do WordPress no Amazon Lightsail <br>
-https://lightsail.aws.amazon.com/ls/docs/pt_br/articles/amazon-lightsail-tutorial-launching-and-configuring-wordpress <br>
-Fazer da etapa 1 até a 5 somente.
+tags: 
+author: 
+source: 
+---
+# Devops challenge júnior - plugin
+Segue resumidamente alguns dos pontos sobre o deploy e 
+manutenção do plugin de wordpress **devops_challenge.php**
 
-### → Challenge Dev:
-> Resolva os 3 erros no plugin<br>
-[Plugin DevOps Challenge](devops_challenge.php)
+### **Infraestrutura homologada (opcional)**
+A infraestrutura escolhida para a implantação foi uma máquina da AWS no serviço de lightsail, com a seguinte configuração:
+- 1 vcpu
+- 1 gb de ram
+- 40 gb de armazenamento
+
+Nos testes realizados, foi feita a tentativa em uma maquina de 500 mb de memória, porém, o banco de dados nao subia utilizando o docker, isso será corrigido no issues **#1**
+
+### **Arquitetura**
+
+A arquitetura de software consiste na utilização de 4 containers, sendo 1 **nginx** como servidor web, 1 banco de dados **mysql** , 1 *php-fpm* como servidores de aplicação e 1 bot para geração de certificados ssl para utilização de https, este ainda nao configurado, será consertado após analise no issues **2**, por enquanto, sem impacto na produção.
+### Versões de software
+
+- Mysql - 8.0.29
+- Nginx - 1.22.0
+- php-fpm - 8.1-fpm
+- certbot - nightly
 
 
+### Hotfix1 - issue **3**
 
-### Entrega
-1. Efetue o fork deste repositório e crie um branch com o seu nome e sobrenome. (exemplo: fulano-dasilva)
-2. Após finalizar o desafio, crie um Pull Request.
-3. Aguarde algum contribuidor realizar o review.
-4. Dados de acesso do WordPress e Lightsail com tudo configurado e funcionando
-5. Prints e url "http://PublicIpAddress/wp-login.php"
-6. Documentação (Opcional)
-7. Arquitetura (Opcional)
-8. Plugin informado arrumado e versionado
-9. Suba o plugin para a sua instalação WordPress Lightsail e ative o mesmo.
+versão_afetada: 1.0
+
+- linha 1 
+Faltou a flag de interpretação PHP
+
+**<?php**
+ 
+ - linha 35
+Faltou ponto e vírgula no final da linhapara o php interpretar a proxima função
+
+$lyrics = explode( "\n", $lyrics ) **;**
+         
+ - linha  54
+Faltou a função do próprio wordpress de adição de função nas notificações 
+
+add_action( '**admin_notices**', 'devops_challenge' ); 
+ 
+#############################fim da documentação
+
+### CREDENCIAIS
+
+- aws
+
+link: https://938023195502.signin.aws.amazon.com/console
+
+chave de acesso:AKIA5UZUKCNXPH3U4PO7
+
+chave de acesso secreta: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
+
+Usuario: contribuidor
+
+Senha: apiki_1541tre
+
+- wordpress
+
+link: http://44.206.234.209/
+
+Usuario: iago
+
+Senha: eKo9(V@@XK*gHc4w%!
+
+![image](https://user-images.githubusercontent.com/82549725/198507625-485fb2a8-8c7a-4eaa-9976-73ff508efb26.png)
+
