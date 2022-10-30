@@ -1,0 +1,5 @@
+Versão 1.0.1 - Corrigidos erros no plugin:
+
+1 - Adicionada tag de início de código php (<?php );
+2 - Corrigido erro na linha 34, falta de ponto e vírgula;
+3 - Correção para mostrar a mensagem da função devops_challenge() no contexto de avisos, adicionado hook admin_notices em add_action().
