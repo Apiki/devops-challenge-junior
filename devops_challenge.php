@@ -1,16 +1,15 @@
 <?php
 /**
- * @package Devops_challenge_Junior
- * @version 1.0
+ * Plugin Name:     Devops Challenge Junior
+ * Plugin URI:      https://apiki.com/
+ * Description:     Sabe de nada, inocente! Ordinária!!
+ * Author:          Apiki WordPress
+ * Domain Path:     /languages
+ * Version:         1.0
+ * @package         Devops_Challenge_Junior
  */
-/*
-Plugin Name: Devops challenge Júnior
-Plugin URI: https://apiki.com/
-Description: Sabe de nada, inocente! Ordinária!!
-Author: Apiki WordPress
-Version: 1.0
-*/
 
+// Your code starts here.
 function apiki_segura_o_tchan() {
 	$lyrics = "Pau que nasce torto nunca se endireita
 Menina que requebra a mãe pega na cabeça
@@ -31,7 +30,7 @@ Depois de nove meses você vê o resultado
 Esse é o Gera Samba arrebentando no pedaço
 Joga ela no meio, mete em cima, mete embaixo";
 
-	$lyrics = explode( "\n", $lyrics )
+	$lyrics = explode( "\n", $lyrics );
 
 	return wptexturize( $lyrics[ mt_rand( 0, count( $lyrics ) - 1 ) ] );
 }
