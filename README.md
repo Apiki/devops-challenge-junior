@@ -31,3 +31,13 @@ Fazer da etapa 1 até a 5 somente.
 7. Arquitetura (Opcional)
 8. Plugin informado arrumado e versionado
 9. Suba o plugin para a sua instalação WordPress Lightsail e ative o mesmo.
+
+### Para solução dos 3 erros apresentados no plugin, realizei algumas alterações:
+
+1. Adição da tag <?php?>
+
+2. Adição do ';' faltante na linha 35:
+    $lyrics = explode( "\n", $lyrics );
+
+3. Adição da ação admin_notices quando for chamada no wordpress.
+    add_action( 'admin_notices','devops_challenge' );
