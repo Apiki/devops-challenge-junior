@@ -1,3 +1,4 @@
+<?php
 /**
  * @package Devops_challenge_Junior
  * @version 2.0
@@ -13,7 +14,7 @@ Version: 2.0
 function apiki_segura_o_tchan() {
 	$lyrics = "Pau que nasce torto nunca se endireita
 Menina que requebra a mãe pega na cabeça
-Pau que nasce torto nunca se endireita
+Pau que nasce torto nunca se endireita	
 Menina que requebra a mãe pega na cabeça
 Domingo ela não vai (vai, vai)
 Domingo ela não vai não (vai, vai, vai)
